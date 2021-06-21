@@ -59,3 +59,57 @@ Migrating to CreateTrades (20210621180933)
   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY "portfolios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" WHERE "trades"."portfolio_id" = ? /* loading for inspect */ LIMIT ?[0m  [["portfolio_id", 1], ["LIMIT", 11]]
   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" WHERE "trades"."portfolio_id" = ? /* loading for inspect */ LIMIT ?[0m  [["portfolio_id", 1], ["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2021-06-21 19:39:25 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cruser/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cruser/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.0ms | Allocations: 480)
+Completed 200 OK in 42ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 4151)
+
+
+Started GET "/" for ::1 at 2021-06-21 19:39:28 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cruser/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cruser/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.8ms | Allocations: 221)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms | Allocations: 870)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-06-21 19:39:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 127.0.0.1 at 2021-06-21 19:41:33 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/cruser/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/cruser/.rvm/gems/ruby-2.6.1/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.9ms | Allocations: 315)
+Completed 200 OK in 39ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 2602)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-06-21 19:41:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users" for 127.0.0.1 at 2021-06-21 19:42:17 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.16ms)
+Completed 200 OK in 59ms (Views: 47.7ms | ActiveRecord: 1.4ms | Allocations: 9942)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-06-21 19:42:42 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:44:in `set_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1126)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-06-21 19:47:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
