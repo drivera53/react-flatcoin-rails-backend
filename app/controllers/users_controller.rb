@@ -15,12 +15,19 @@ class UsersController < ApplicationController
 
   # POST /users
   def create
-    @user = User.new(user_params)
+    user = User.new(user_params)
 
-    if @user.save
-      render json: @user, status: :created, location: @user
+    if user.save
+      payload = {user_id: user.id}
+      token = encode_token(payload)
+      render json: {
+        :user => user.to_json(:include => [
+          :portfolios=>{:include=> :trades}]),
+        :jwt => token
+      }
     else
-      render json: @user.errors, status: :unprocessable_entity
+      # render json: {@user.errors, status: :unprocessable_entity}
+      render json: {error: 'Error creating account'}
     end
   end
 
@@ -46,6 +53,7 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
+      # params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
+      params.permit(:first_name, :last_name, :email, :password, :password_confirmation)
     end
 end

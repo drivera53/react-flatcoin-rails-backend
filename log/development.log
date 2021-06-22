@@ -113,3 +113,457 @@ Started GET "/login" for 127.0.0.1 at 2021-06-21 19:47:46 -0400
   
 ActionController::RoutingError (No route matches [GET] "/login"):
   
+Started GET "/login" for 127.0.0.1 at 2021-06-21 19:58:28 -0400
+  
+NoMethodError (undefined method `port' for #<ActionDispatch::Routing::Mapper:0x00007fc4643f68a0>
+Did you mean?  post):
+  
+config/routes.rb:7:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/auto-login" for 127.0.0.1 at 2021-06-21 19:58:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/auto-login"):
+  
+Started GET "/auto-login" for 127.0.0.1 at 2021-06-21 19:59:37 -0400
+Processing by SessionController#auto_login as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 498)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/application_controller.rb:8:in `auth_header_token'
+app/controllers/application_controller.rb:20:in `decoded_token'
+app/controllers/application_controller.rb:12:in `session_user'
+app/controllers/session_controller.rb:19:in `auto_login'
+Started GET "/klkl" for 127.0.0.1 at 2021-06-21 20:00:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/klkl"):
+  
+Started GET "/auto-login" for 127.0.0.1 at 2021-06-21 20:02:25 -0400
+Processing by SessionController#auto_login as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 479)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/application_controller.rb:8:in `auth_header_token'
+app/controllers/application_controller.rb:20:in `decoded_token'
+app/controllers/application_controller.rb:12:in `session_user'
+app/controllers/session_controller.rb:19:in `auto_login'
+Started GET "/auto-login" for ::1 at 2021-06-21 20:02:50 -0400
+Processing by SessionController#auto_login as HTML
+Completed 500 Internal Server Error in 1ms (Allocations: 480)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/application_controller.rb:8:in `auth_header_token'
+app/controllers/application_controller.rb:20:in `decoded_token'
+app/controllers/application_controller.rb:12:in `session_user'
+app/controllers/session_controller.rb:19:in `auto_login'
+Started GET "/favicon.ico" for ::1 at 2021-06-21 20:02:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/kl" for ::1 at 2021-06-21 20:03:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/kl"):
+  
+Started GET "/users" for ::1 at 2021-06-21 21:24:36 -0400
+Processing by UsersController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:8:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 19ms (Views: 14.6ms | ActiveRecord: 1.3ms | Allocations: 6650)
+
+
+Started POST "/login" for ::1 at 2021-06-21 21:26:21 -0400
+Processing by SessionController#login as JSON
+  Parameters: {"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]", "session"=>{"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "last@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `login'
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+  [1m[36mTrade Load (0.5ms)[0m  [1m[34mSELECT "trades".* FROM "trades" WHERE "trades"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Completed 200 OK in 283ms (Views: 2.8ms | ActiveRecord: 3.5ms | Allocations: 17707)
+
+
+Started POST "/login" for ::1 at 2021-06-22 07:24:48 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionController#login as JSON
+  Parameters: {"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]", "session"=>{"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "last@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `login'
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+  [1m[36mTrade Load (0.5ms)[0m  [1m[34mSELECT "trades".* FROM "trades" WHERE "trades"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 279ms (Views: 2.3ms | ActiveRecord: 3.4ms | Allocations: 25809)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 07:36:44 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.66ms)
+Completed 200 OK in 21ms (Views: 13.4ms | ActiveRecord: 1.5ms | Allocations: 3096)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 07:36:48 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1318)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 07:38:36 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.27ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 07:38:51 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1318)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 07:40:09 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 1299)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 07:49:31 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 0.7ms | Allocations: 1767)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 07:55:33 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.6ms | Allocations: 1768)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 07:56:32 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 07:56:36 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.49ms)
+Completed 200 OK in 8ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1318)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 07:56:37 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 07:56:39 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 07:58:57 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.42ms)
+Completed 200 OK in 53ms (Views: 1.0ms | ActiveRecord: 0.3ms | Allocations: 1302)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 08:00:30 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 08:02:52 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 08:03:27 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 08:05:30 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.3ms | Allocations: 1299)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 08:12:51 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.6ms | Allocations: 1767)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 08:13:18 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 08:13:21 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started POST "/login" for ::1 at 2021-06-22 08:32:40 -0400
+Processing by SessionController#login as JSON
+  Parameters: {"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]", "session"=>{"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/session_controller.rb:3:in `login'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "last@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 235ms (Views: 6.1ms | ActiveRecord: 1.1ms | Allocations: 1093)
+
+
+Started POST "/login" for ::1 at 2021-06-22 08:33:24 -0400
+Processing by SessionController#login as JSON
+  Parameters: {"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]", "session"=>{"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "last@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `login'
+  [1m[36mPortfolio Load (2.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+  [1m[36mTrade Load (0.5ms)[0m  [1m[34mSELECT "trades".* FROM "trades" WHERE "trades"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 200 OK in 235ms (Views: 0.7ms | ActiveRecord: 2.9ms | Allocations: 2419)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 08:39:20 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 0.8ms | Allocations: 1768)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 08:40:41 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started POST "/login" for ::1 at 2021-06-22 08:41:12 -0400
+Processing by SessionController#login as JSON
+  Parameters: {"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]", "session"=>{"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "last@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `login'
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+  [1m[36mTrade Load (0.5ms)[0m  [1m[34mSELECT "trades".* FROM "trades" WHERE "trades"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 200 OK in 231ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 2435)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 08:42:24 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started POST "/login" for ::1 at 2021-06-22 08:42:58 -0400
+Processing by SessionController#login as JSON
+  Parameters: {"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]", "session"=>{"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "last@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `login'
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+  [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades" WHERE "trades"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 228ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 2374)
+
+
+Started POST "/login" for ::1 at 2021-06-22 08:48:01 -0400
+Processing by SessionController#login as JSON
+  Parameters: {"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]", "session"=>{"email"=>"last@test.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "last@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `login'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+  [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" WHERE "trades"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 229ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 2374)
+
+
+Started POST "/signup" for ::1 at 2021-06-22 11:16:00 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"first_name"=>"Danny", "last_name"=>"Rivera", "email"=>"dan@test.com", "password"=>"[FILTERED]", "first_nameError"=>"", "last_nameError"=>"", "emailError"=>"", "passwordError"=>"[FILTERED]", "user"=>{"first_name"=>"Danny", "last_name"=>"Rivera", "email"=>"dan@test.com"}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 1088)
+
+
+Started POST "/signup" for ::1 at 2021-06-22 11:27:49 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as JSON
+  Parameters: {"first_name"=>"Danny", "last_name"=>"Rivera", "email"=>"dan@test.com", "password"=>"[FILTERED]", "first_nameError"=>"", "last_nameError"=>"", "emailError"=>"", "passwordError"=>"[FILTERED]", "user"=>{"first_name"=>"Danny", "last_name"=>"Rivera", "email"=>"dan@test.com"}}
+[31mUnpermitted parameters: :first_nameError, :last_nameError, :emailError, :passwordError, :user[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (6.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Danny"], ["last_name", "Rivera"], ["email", "dan@test.com"], ["password_digest", "$2a$12$cVi2wbQTb7yQAVV29wsvrukcHEQDIlvbzDUKZAOWf1Ensd13ldIqO"], ["created_at", "2021-06-22 15:27:49.680656"], ["updated_at", "2021-06-22 15:27:49.680656"]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/users_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 244ms (Views: 0.9ms | ActiveRecord: 8.4ms | Allocations: 7492)
+
+
+Started POST "/signup" for ::1 at 2021-06-22 11:29:33 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"first_name"=>"Danny", "last_name"=>"Rivera", "email"=>"tim@test.com", "password"=>"[FILTERED]", "first_nameError"=>"", "last_nameError"=>"", "emailError"=>"", "passwordError"=>"[FILTERED]", "user"=>{"first_name"=>"Danny", "last_name"=>"Rivera", "email"=>"tim@test.com"}}
+[31mUnpermitted parameters: :first_nameError, :last_nameError, :emailError, :passwordError, :user[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Danny"], ["last_name", "Rivera"], ["email", "tim@test.com"], ["password_digest", "$2a$12$7521qmWjQFHuacb7i4WFNOs6ziueUJJgv.YVgygL9DUDhzkhlLw8G"], ["created_at", "2021-06-22 15:29:33.986467"], ["updated_at", "2021-06-22 15:29:33.986467"]]
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/users_controller.rb:24:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 200 OK in 234ms (Views: 0.5ms | ActiveRecord: 3.5ms | Allocations: 2729)
+
+
