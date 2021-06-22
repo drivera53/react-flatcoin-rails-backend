@@ -18,11 +18,15 @@ class UsersController < ApplicationController
     user = User.new(user_params)
 
     if user.save
+      # Creating an initial Portfolio for user.
+      Portfolio.create(:name => "Initial Portfolio", :description => "For training", :initial_balance => 1000000, :user_id => user.id)
       payload = {user_id: user.id}
       token = encode_token(payload)
       render json: {
+        # :user => user.to_json(:include => [
+        #   :portfolios=>{:include=> :trades}]),
         :user => user.to_json(:include => [
-          :portfolios=>{:include=> :trades}]),
+          :portfolios, :trades]),
         :jwt => token
       }
     else
