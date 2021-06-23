@@ -18,7 +18,13 @@ class TradesController < ApplicationController
     @trade = Trade.new(trade_params)
 
     if @trade.save
-      render json: @trade, status: :created, location: @trade
+      user = User.find_by_id(trade_params[:user_id])
+      user_json = user.to_json(:include => [
+        :portfolios, :trades])
+      # render json: @trade, status: :created, location: @trade
+      render json: {
+        user: user_json
+      }
     else
       render json: @trade.errors, status: :unprocessable_entity
     end

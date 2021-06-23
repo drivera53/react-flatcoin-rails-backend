@@ -1623,3 +1623,1937 @@ Processing by UsersController#create as JSON
 Completed 200 OK in 279ms (Views: 0.7ms | ActiveRecord: 11.0ms | Allocations: 22459)
 
 
+Started GET "/auto-login" for ::1 at 2021-06-22 14:33:53 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.4ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (15.05ms)
+Completed 200 OK in 21ms (Views: 16.7ms | ActiveRecord: 0.8ms | Allocations: 4174)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 14:38:21 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.1ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 14:42:17 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.93ms)
+Completed 200 OK in 8ms (Views: 5.2ms | ActiveRecord: 0.5ms | Allocations: 3367)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 14:42:19 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (1.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.75ms)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 1.8ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 14:47:20 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.12ms)
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:00:22 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.6ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (24.85ms)
+Completed 200 OK in 31ms (Views: 24.2ms | ActiveRecord: 1.9ms | Allocations: 3879)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:00:36 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.4ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.4ms)
+Completed 200 OK in 15ms (Views: 9.3ms | ActiveRecord: 0.9ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:01:23 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.48ms)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:01:43 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.29ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:02:03 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.54ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.7ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:07:34 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.54ms)
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 1.0ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:07:46 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.87ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:12:52 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.8ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.05ms)
+Completed 200 OK in 12ms (Views: 6.3ms | ActiveRecord: 2.4ms | Allocations: 3878)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:14:05 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.97ms)
+Completed 200 OK in 12ms (Views: 7.4ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:14:33 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.42ms)
+Completed 200 OK in 8ms (Views: 4.6ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:31:42 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.5ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.5ms)
+Completed 200 OK in 12ms (Views: 5.9ms | ActiveRecord: 2.2ms | Allocations: 3878)
+
+
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ? /* loading for inspect */ LIMIT ?[0m  [["user_id", 6], ["LIMIT", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ? /* loading for inspect */ LIMIT ?[0m  [["user_id", 6], ["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ? ORDER BY "portfolios"."id" DESC LIMIT ?[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ? ORDER BY "portfolios"."id" DESC LIMIT ?[0m  [["user_id", 6], ["LIMIT", 1]]
+  [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades" WHERE "trades"."portfolio_id" = ? /* loading for inspect */ LIMIT ?[0m  [["portfolio_id", 6], ["LIMIT", 11]]
+Started GET "/auto-login" for ::1 at 2021-06-22 15:35:03 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (47.89ms)
+Completed 200 OK in 102ms (Views: 51.4ms | ActiveRecord: 5.2ms | Allocations: 16780)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:35:31 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.8ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (50.64ms)
+Completed 200 OK in 117ms (Views: 52.5ms | ActiveRecord: 6.0ms | Allocations: 16765)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:46:02 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.72ms)
+Completed 200 OK in 13ms (Views: 7.6ms | ActiveRecord: 1.2ms | Allocations: 3878)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:49:12 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.87ms)
+Completed 200 OK in 9ms (Views: 5.2ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 15:50:48 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.43ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:08:35 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.4ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.04ms)
+Completed 200 OK in 14ms (Views: 8.0ms | ActiveRecord: 1.9ms | Allocations: 3879)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:08:51 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.4ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.32ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.7ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:08:57 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.44ms)
+Completed 200 OK in 15ms (Views: 7.8ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:18:31 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.4ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (11.05ms)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 1.1ms | Allocations: 3878)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:19:24 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.02ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.7ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:22:23 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (27.64ms)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 0.7ms | Allocations: 3367)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:24:46 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.4ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:27:32 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.25ms)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:28:43 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.58ms)
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.7ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:28:45 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.46ms)
+Completed 200 OK in 13ms (Views: 8.8ms | ActiveRecord: 0.8ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:29:46 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.61ms)
+Completed 200 OK in 13ms (Views: 8.3ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:33:31 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.72ms)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.8ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:34:15 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.66ms)
+Completed 200 OK in 12ms (Views: 6.8ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:35:33 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.11ms)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 17:38:36 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.21ms)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 18:33:43 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (38.9ms)
+Completed 200 OK in 45ms (Views: 39.2ms | ActiveRecord: 1.3ms | Allocations: 3879)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 19:20:39 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.45ms)
+Completed 200 OK in 20ms (Views: 9.7ms | ActiveRecord: 1.6ms | Allocations: 3878)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 19:20:54 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.18ms)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 19:56:42 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.81ms)
+Completed 200 OK in 14ms (Views: 7.9ms | ActiveRecord: 1.1ms | Allocations: 3878)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 19:57:04 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (2.6ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (62.58ms)
+Completed 200 OK in 73ms (Views: 67.1ms | ActiveRecord: 3.0ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:05:58 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (1.7ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (11.17ms)
+Completed 200 OK in 20ms (Views: 9.9ms | ActiveRecord: 2.6ms | Allocations: 3878)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:06:23 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (1.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.36ms)
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 1.7ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:07:51 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.2ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:09:41 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.97ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.7ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:10:06 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (21.83ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.5ms | Allocations: 3367)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:11:08 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.03ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:12:37 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.63ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:14:29 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.61ms)
+Completed 200 OK in 12ms (Views: 6.7ms | ActiveRecord: 0.8ms | Allocations: 3369)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:14:33 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.66ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.9ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:15:25 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.53ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.8ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:23:12 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.4ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.21ms)
+Completed 200 OK in 13ms (Views: 7.2ms | ActiveRecord: 1.4ms | Allocations: 3878)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:25:16 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.65ms)
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:25:18 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.7ms)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:27:30 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.58ms)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:27:36 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.23ms)
+Completed 200 OK in 10ms (Views: 6.4ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:28:46 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (11.77ms)
+Completed 200 OK in 18ms (Views: 13.8ms | ActiveRecord: 0.7ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:29:41 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (16.73ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.6ms | Allocations: 3367)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:51:07 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.0ms)
+Completed 200 OK in 12ms (Views: 6.9ms | ActiveRecord: 1.2ms | Allocations: 3878)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 20:51:31 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.08ms)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 21:19:49 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.79ms)
+Completed 200 OK in 10ms (Views: 5.7ms | ActiveRecord: 1.1ms | Allocations: 3878)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 21:46:33 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.4ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (5.27ms)
+Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 1.2ms | Allocations: 3878)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 21:50:40 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.2ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 21:52:23 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.33ms)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 21:58:06 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.13ms)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 22:00:41 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (11.48ms)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 0.7ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 22:01:33 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (21.57ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.6ms | Allocations: 3367)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 22:05:06 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.68ms)
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 22:06:06 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.7ms)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 22:06:35 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.7ms)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.7ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 22:07:08 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.31ms)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 0.6ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 22:08:23 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.48ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 22:14:52 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.58ms)
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 1.2ms | Allocations: 3878)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 22:16:30 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (4.38ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.4ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 22:18:08 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (12.05ms)
+Completed 200 OK in 19ms (Views: 14.2ms | ActiveRecord: 0.7ms | Allocations: 3366)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 22:40:08 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.4ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.26ms)
+Completed 200 OK in 13ms (Views: 7.1ms | ActiveRecord: 1.4ms | Allocations: 3878)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-22 22:42:30 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 6]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.22ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.5ms | Allocations: 3366)
+
+
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/login" for ::1 at 2021-06-22 22:43:40 -0400
+Processing by SessionController#login as JSON
+  Parameters: {"email"=>"pedrito@pass.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]", "session"=>{"email"=>"pedrito@pass.com", "password"=>"[FILTERED]", "emailError"=>"", "passwordError"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "pedrito@pass.com"], ["LIMIT", 1]]
+  ↳ app/controllers/session_controller.rb:3:in `login'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+  [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/session_controller.rb:7:in `login'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 245ms (Views: 0.7ms | ActiveRecord: 9.2ms | Allocations: 6832)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ? /* loading for inspect */ LIMIT ?[0m  [["user_id", 6], ["LIMIT", 11]]
+Started GET "/auto-login" for ::1 at 2021-06-23 12:58:51 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.5ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (50.06ms)
+Completed 200 OK in 62ms (Views: 51.8ms | ActiveRecord: 2.0ms | Allocations: 5854)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 12:59:06 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.61ms)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.5ms | Allocations: 3511)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:04:29 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.1ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.28ms)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 0.6ms | Allocations: 3511)
+
+
+Started GET "/use" for ::1 at 2021-06-23 13:08:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/use"):
+  
+Started GET "/auto-login" for ::1 at 2021-06-23 13:12:07 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.8ms)
+Completed 200 OK in 16ms (Views: 8.9ms | ActiveRecord: 1.3ms | Allocations: 4289)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:12:11 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33705, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33705, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (1.0ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Bitcoin"], ["coin_id", "bitcoin"], ["price", 33705.0], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:12:11.438162"], ["updated_at", "2021-06-23 17:12:11.438162"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+[active_model_serializers] Rendered TradeSerializer with ActiveModelSerializers::Adapter::Attributes (0.8ms)
+Completed 201 Created in 19ms (Views: 2.5ms | ActiveRecord: 2.9ms | Allocations: 4228)
+
+
+  [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "trades"[0m
+Started POST "/trades" for ::1 at 2021-06-23 13:13:08 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33705, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33705, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (1.7ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Bitcoin"], ["coin_id", "bitcoin"], ["price", 33705.0], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:13:08.440366"], ["updated_at", "2021-06-23 17:13:08.440366"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+[active_model_serializers] Rendered TradeSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 201 Created in 14ms (Views: 1.1ms | ActiveRecord: 5.0ms | Allocations: 3543)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:13:09 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Ethereum", "coin_id"=>"ethereum", "price"=>1991.42, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Ethereum", "coin_id"=>"ethereum", "price"=>1991.42, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (0.7ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Ethereum"], ["coin_id", "ethereum"], ["price", 1991.42], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:13:09.967376"], ["updated_at", "2021-06-23 17:13:09.967376"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+[active_model_serializers] Rendered TradeSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 201 Created in 18ms (Views: 2.6ms | ActiveRecord: 2.1ms | Allocations: 3551)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:13:11 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Cardano", "coin_id"=>"cardano", "price"=>1.25, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Cardano", "coin_id"=>"cardano", "price"=>1.25, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (0.8ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Cardano"], ["coin_id", "cardano"], ["price", 1.25], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:13:11.210739"], ["updated_at", "2021-06-23 17:13:11.210739"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+[active_model_serializers] Rendered TradeSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 201 Created in 34ms (Views: 3.1ms | ActiveRecord: 7.7ms | Allocations: 3551)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:13:11 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Dogecoin", "coin_id"=>"dogecoin", "price"=>0.232625, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Dogecoin", "coin_id"=>"dogecoin", "price"=>0.232625, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (0.6ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Dogecoin"], ["coin_id", "dogecoin"], ["price", 0.232625], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:13:11.808498"], ["updated_at", "2021-06-23 17:13:11.808498"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+[active_model_serializers] Rendered TradeSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 201 Created in 23ms (Views: 1.1ms | ActiveRecord: 2.2ms | Allocations: 3551)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "trades"[0m
+Started GET "/auto-login" for ::1 at 2021-06-23 13:13:42 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (12.65ms)
+Completed 200 OK in 23ms (Views: 13.1ms | ActiveRecord: 0.5ms | Allocations: 4256)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:15:04 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (29.91ms)
+Completed 200 OK in 37ms (Views: 31.2ms | ActiveRecord: 0.5ms | Allocations: 4257)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:15:07 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.65ms)
+Completed 200 OK in 14ms (Views: 9.9ms | ActiveRecord: 0.6ms | Allocations: 4256)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:15:11 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Dogecoin", "coin_id"=>"dogecoin", "price"=>0.232758, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Dogecoin", "coin_id"=>"dogecoin", "price"=>0.232758, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (1.0ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Dogecoin"], ["coin_id", "dogecoin"], ["price", 0.232758], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:15:11.704607"], ["updated_at", "2021-06-23 17:15:11.704607"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+[active_model_serializers] Rendered TradeSerializer with ActiveModelSerializers::Adapter::Attributes (0.54ms)
+Completed 201 Created in 19ms (Views: 1.3ms | ActiveRecord: 7.9ms | Allocations: 3552)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:17:10 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (7.0ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.5ms | Allocations: 4408)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:17:50 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (6.71ms)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.5ms | Allocations: 4408)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:20:16 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.59ms)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 0.5ms | Allocations: 4408)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:20:20 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33762, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33762, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (0.6ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Bitcoin"], ["coin_id", "bitcoin"], ["price", 33762.0], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:20:20.038165"], ["updated_at", "2021-06-23 17:20:20.038165"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+[active_model_serializers] Rendered TradeSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 201 Created in 17ms (Views: 1.1ms | ActiveRecord: 4.3ms | Allocations: 3543)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:23:23 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.29ms)
+Completed 200 OK in 15ms (Views: 9.4ms | ActiveRecord: 0.8ms | Allocations: 4552)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:23:30 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.83ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.7ms | Allocations: 4552)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:23:33 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Dogecoin", "coin_id"=>"dogecoin", "price"=>0.232876, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Dogecoin", "coin_id"=>"dogecoin", "price"=>0.232876, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (0.6ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Dogecoin"], ["coin_id", "dogecoin"], ["price", 0.232876], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:23:33.059971"], ["updated_at", "2021-06-23 17:23:33.059971"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (11.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+[active_model_serializers] Rendered TradeSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 201 Created in 23ms (Views: 1.0ms | ActiveRecord: 12.2ms | Allocations: 3551)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:25:01 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.05ms)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.6ms | Allocations: 4704)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:25:07 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.28ms)
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.6ms | Allocations: 4704)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:25:09 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33715, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33715, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (0.5ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Bitcoin"], ["coin_id", "bitcoin"], ["price", 33715.0], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:25:09.585440"], ["updated_at", "2021-06-23 17:25:09.585440"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+[active_model_serializers] Rendered TradeSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 201 Created in 14ms (Views: 1.0ms | ActiveRecord: 3.0ms | Allocations: 3543)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:25:34 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (21.25ms)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.7ms | Allocations: 4849)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:25:37 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (11.26ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 0.6ms | Allocations: 4848)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:25:39 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Binance Coin", "coin_id"=>"binancecoin", "price"=>293.91, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Binance Coin", "coin_id"=>"binancecoin", "price"=>293.91, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (0.6ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Binance Coin"], ["coin_id", "binancecoin"], ["price", 293.91], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:25:39.579558"], ["updated_at", "2021-06-23 17:25:39.579558"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+[active_model_serializers] Rendered TradeSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 201 Created in 15ms (Views: 1.1ms | ActiveRecord: 4.4ms | Allocations: 3551)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:38:44 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.6ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (13.86ms)
+Completed 200 OK in 19ms (Views: 13.6ms | ActiveRecord: 1.5ms | Allocations: 5512)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:38:47 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33615, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33615, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (1.4ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Bitcoin"], ["coin_id", "bitcoin"], ["price", 33615.0], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:38:47.923337"], ["updated_at", "2021-06-23 17:38:47.923337"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+[active_model_serializers] Rendered TradeSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 201 Created in 11ms (Views: 0.9ms | ActiveRecord: 2.9ms | Allocations: 3564)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:39:38 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (8.81ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.5ms | Allocations: 5144)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:39:42 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Cardano", "coin_id"=>"cardano", "price"=>1.24, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Cardano", "coin_id"=>"cardano", "price"=>1.24, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (0.6ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Cardano"], ["coin_id", "cardano"], ["price", 1.24], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:39:42.142867"], ["updated_at", "2021-06-23 17:39:42.142867"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+[active_model_serializers] Rendered TradeSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 201 Created in 16ms (Views: 1.0ms | ActiveRecord: 4.1ms | Allocations: 3551)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 1]]
+Started GET "/auto-login" for ::1 at 2021-06-23 13:51:50 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (32.21ms)
+Completed 200 OK in 65ms (Views: 33.5ms | ActiveRecord: 1.4ms | Allocations: 21832)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:51:54 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33685, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33685, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (1.2ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Bitcoin"], ["coin_id", "bitcoin"], ["price", 33685.0], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:51:54.715187"], ["updated_at", "2021-06-23 17:51:54.715187"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:21:in `create'
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/trades_controller.rb:22:in `create'
+  [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/trades_controller.rb:22:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.29ms)
+Completed 200 OK in 27ms (Views: 1.2ms | ActiveRecord: 3.6ms | Allocations: 8413)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:53:20 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (9.41ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.5ms | Allocations: 5440)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:53:21 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (10.32ms)
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.9ms | Allocations: 5441)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:53:23 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Cardano", "coin_id"=>"cardano", "price"=>1.25, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Cardano", "coin_id"=>"cardano", "price"=>1.25, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (1.2ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Cardano"], ["coin_id", "cardano"], ["price", 1.25], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:53:23.893574"], ["updated_at", "2021-06-23 17:53:23.893574"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:21:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/trades_controller.rb:22:in `create'
+  [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/trades_controller.rb:22:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.31ms)
+Completed 200 OK in 24ms (Views: 1.1ms | ActiveRecord: 3.6ms | Allocations: 7895)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:54:01 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (10.22ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.5ms | Allocations: 5592)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:54:07 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (11.94ms)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.7ms | Allocations: 5592)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:54:11 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33678, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33678, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (0.6ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Bitcoin"], ["coin_id", "bitcoin"], ["price", 33678.0], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:54:11.110251"], ["updated_at", "2021-06-23 17:54:11.110251"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:21:in `create'
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/trades_controller.rb:22:in `create'
+  [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/trades_controller.rb:22:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.23ms)
+Completed 200 OK in 22ms (Views: 0.9ms | ActiveRecord: 2.7ms | Allocations: 8039)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 13:54:46 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (12.24ms)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.7ms | Allocations: 5737)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 13:55:06 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33665, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Bitcoin", "coin_id"=>"bitcoin", "price"=>33665, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (0.7ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Bitcoin"], ["coin_id", "bitcoin"], ["price", 33665.0], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 17:55:06.907150"], ["updated_at", "2021-06-23 17:55:06.907150"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:21:in `create'
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/trades_controller.rb:22:in `create'
+  [1m[36mTrade Load (0.3ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/trades_controller.rb:22:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.41ms)
+Completed 200 OK in 24ms (Views: 0.9ms | ActiveRecord: 3.1ms | Allocations: 8191)
+
+
+Started POST "/trades" for ::1 at 2021-06-23 14:00:30 -0400
+Processing by TradesController#create as JSON
+  Parameters: {"coin_name"=>"Tether", "coin_id"=>"tether", "price"=>1, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4, "trade"=>{"coin_name"=>"Tether", "coin_id"=>"tether", "price"=>1, "quantity"=>1, "user_id"=>4, "portfolio_id"=>4}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTrade Create (0.7ms)[0m  [1m[32mINSERT INTO "trades" ("coin_name", "coin_id", "price", "quantity", "user_id", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["coin_name", "Tether"], ["coin_id", "tether"], ["price", 1.0], ["quantity", 1], ["user_id", 4], ["portfolio_id", 4], ["created_at", "2021-06-23 18:00:30.867943"], ["updated_at", "2021-06-23 18:00:30.867943"]]
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/trades_controller.rb:20:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/trades_controller.rb:21:in `create'
+  [1m[36mPortfolio Load (0.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/trades_controller.rb:22:in `create'
+  [1m[36mTrade Load (0.2ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/trades_controller.rb:22:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.33ms)
+Completed 200 OK in 22ms (Views: 1.0ms | ActiveRecord: 3.0ms | Allocations: 8343)
+
+
+Started GET "/auto-login" for ::1 at 2021-06-23 14:21:44 -0400
+Processing by SessionController#auto_login as JSON
+  Parameters: {"session"=>{}}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:15:in `session_user'
+[active_model_serializers]   [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers]   [1m[36mTrade Load (0.8ms)[0m  [1m[34mSELECT "trades".* FROM "trades" INNER JOIN "portfolios" ON "trades"."portfolio_id" = "portfolios"."id" WHERE "portfolios"."user_id" = ?[0m  [["user_id", 4]]
+[active_model_serializers]   ↳ app/controllers/session_controller.rb:20:in `auto_login'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (11.43ms)
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 1.6ms | Allocations: 6536)
+
+
