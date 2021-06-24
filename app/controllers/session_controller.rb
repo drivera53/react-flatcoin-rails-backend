@@ -11,7 +11,8 @@ class SessionController < ApplicationController
         jwt: token
       }
     else 
-      render json: {status: "error", message: "We can't find a user according to your information, please try again."}
+      # render json: {status: "error", message: "We can't find a user according to your information, please try again."}
+      render json: {error: "We can't find a user according to your information, please try again."}
     end
   end
 

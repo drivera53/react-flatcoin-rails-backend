@@ -19,7 +19,7 @@ class UsersController < ApplicationController
 
     if user.save
       # Creating an initial Portfolio for user.
-      Portfolio.create(:name => "Initial Portfolio", :description => "For training", :initial_balance => 1000000, :user_id => user.id)
+      Portfolio.create(:name => "Initial Portfolio", :description => "For training", :initial_balance => 1000000, :user_id => user.id, :current_balance => 1000000)
       payload = {user_id: user.id}
       token = encode_token(payload)
       render json: {
