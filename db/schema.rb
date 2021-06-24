@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_21_180933) do
+ActiveRecord::Schema.define(version: 2021_06_23_194338) do
+
+  create_table "coins", force: :cascade do |t|
+    t.string "coin_name"
+    t.string "coin_id"
+    t.decimal "average_price"
+    t.integer "quantity"
+    t.integer "user_id"
+    t.integer "portfolio_id"
+    t.string "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "portfolios", force: :cascade do |t|
     t.string "name"
@@ -29,6 +41,7 @@ ActiveRecord::Schema.define(version: 2021_06_21_180933) do
     t.integer "quantity"
     t.integer "user_id"
     t.integer "portfolio_id"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

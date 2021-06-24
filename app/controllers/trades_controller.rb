@@ -20,7 +20,7 @@ class TradesController < ApplicationController
     if @trade.save
       user = User.find_by_id(trade_params[:user_id])
       user_json = user.to_json(:include => [
-        :portfolios, :trades])
+        :portfolios, :trades, :coins])
       # render json: @trade, status: :created, location: @trade
       render json: {
         user: user_json
@@ -52,6 +52,6 @@ class TradesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def trade_params
-      params.require(:trade).permit(:coin_name, :coin_id, :price, :quantity, :user_id, :portfolio_id)
+      params.require(:trade).permit(:coin_name, :coin_id, :price, :quantity, :user_id, :portfolio_id, :image)
     end
 end

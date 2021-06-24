@@ -1,9 +1,9 @@
-class CreateTrades < ActiveRecord::Migration[6.1]
+class CreateCoins < ActiveRecord::Migration[6.1]
   def change
-    create_table :trades do |t|
+    create_table :coins do |t|
       t.string :coin_name
       t.string :coin_id
-      t.decimal :price
+      t.decimal :average_price
       t.integer :quantity
       t.integer :user_id
       t.integer :portfolio_id

@@ -26,7 +26,7 @@ class UsersController < ApplicationController
         # :user => user.to_json(:include => [
         #   :portfolios=>{:include=> :trades}]),
         :user => user.to_json(:include => [
-          :portfolios, :trades]),
+          :portfolios, :trades, :coins]),
         :jwt => token
       }
     else
