@@ -1,24 +1,19 @@
-# README
+# React - Flatcoin Back End
+Welcome to React - FlatCoin! This App was develop as a Flatiron School React project. I developed this app to help users practice trading cryptocurrencies using virtual (fake) money.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Installation
+Fork this back end repository and Install all of the required gems: (If you run into issues try deleting `Gemfile.lock` and then `bundle install` again.)
+```ruby
+bundle install
+```
+If you want to start with a fresh new database you may delete `development.sqlite` and `schema.rb`; then run:
+```ruby
+rails db:migrate
+```
+Make sure to fork its [front end repository](https://github.com/drivera53/react-flatcoin) as well.
 
-Things you may want to cover:
+# Usage
+Run `rails s` or `rails server -p 3001` if you're currently using port 3000 in your front end. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# License
+[MIT](https://github.com/drivera53/react-flatcoin-rails-backend/blob/main/LICENSE)
