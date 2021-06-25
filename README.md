@@ -14,6 +14,7 @@ Make sure to fork its [front end repository](https://github.com/drivera53/react-
 
 # Usage
 Run `rails s` or `rails server -p 3001` if you're currently using port 3000 in your front end. 
+You may also watch my [YouTube](https://github.com/drivera53/react-flatcoin-rails-backend/blob/main/LICENSE) video.
 
 # License
 [MIT](https://github.com/drivera53/react-flatcoin-rails-backend/blob/main/LICENSE)
